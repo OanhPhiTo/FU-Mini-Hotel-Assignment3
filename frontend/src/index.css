@@ -1,0 +1,231 @@
+/* ===================================================================
+   FUMiniHotel - Pastel Blue / Teal Theme (Màu Xanh Pastel)
+   =================================================================== */
+
+:root {
+  --pastel-primary: #5091a3;
+  --pastel-primary-hover: #3d798a;
+  --pastel-primary-active: #326473;
+  --pastel-light: #eaf2f5;
+  --pastel-lighter: #f4f8fa;
+  --pastel-border: #d5e5ec;
+  --pastel-dark: #22434d;
+  --pastel-secondary: #74a7b7;
+
+  --pastel-green-bg: #daf2e9;
+  --pastel-green-text: #1d694f;
+  --pastel-blue-bg: #d7eaf3;
+  --pastel-blue-text: #265d70;
+  --pastel-amber-bg: #fbf1dd;
+  --pastel-amber-text: #7c581b;
+
+  --bg-app: #f2f7f9;
+  --card-shadow: 0 4px 18px rgba(70, 130, 150, 0.08);
+  --card-shadow-hover: 0 8px 26px rgba(70, 130, 150, 0.14);
+}
+
+body {
+  background-color: var(--bg-app);
+  color: #2c3e50;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background overrides */
+.bg-light {
+  background-color: var(--bg-app) !important;
+}
+
+/* Custom Pastel Navbar */
+.navbar-pastel {
+  background: linear-gradient(135deg, #376f80 0%, #4a899a 50%, #5d9fb0 100%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--pastel-border) !important;
+  border-radius: 12px !important;
+  box-shadow: var(--card-shadow) !important;
+  background-color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover) !important;
+}
+
+/* Form inputs & selects */
+.form-control,
+.form-select {
+  border: 1px solid var(--pastel-border);
+  border-radius: 8px;
+  padding: 0.55rem 0.85rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--pastel-primary);
+  box-shadow: 0 0 0 0.22rem rgba(80, 145, 163, 0.22);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary,
+.btn-pastel-primary {
+  background-color: var(--pastel-primary) !important;
+  border-color: var(--pastel-primary) !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover,
+.btn-pastel-primary:hover {
+  background-color: var(--pastel-primary-hover) !important;
+  border-color: var(--pastel-primary-hover) !important;
+  color: #ffffff !important;
+}
+
+.btn-outline-primary,
+.btn-outline-pastel {
+  color: var(--pastel-primary) !important;
+  border-color: var(--pastel-primary) !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-pastel:hover {
+  background-color: var(--pastel-primary) !important;
+  border-color: var(--pastel-primary) !important;
+  color: #ffffff !important;
+}
+
+/* Warm accent button (replaces harsh orange warning) */
+.btn-warning {
+  background-color: #e5a452 !important;
+  border-color: #e5a452 !important;
+  color: #ffffff !important;
+}
+
+.btn-warning:hover {
+  background-color: #d1913f !important;
+  border-color: #d1913f !important;
+  color: #ffffff !important;
+}
+
+/* Utilities */
+.bg-pastel-primary {
+  background-color: var(--pastel-primary) !important;
+  color: #ffffff !important;
+}
+
+.text-pastel-primary {
+  color: var(--pastel-primary) !important;
+}
+
+.bg-pastel-subtle {
+  background-color: var(--pastel-light) !important;
+}
+
+.bg-pastel-blue {
+  background-color: var(--pastel-blue-bg) !important;
+}
+
+.text-pastel-dark {
+  color: var(--pastel-blue-text) !important;
+}
+
+.bg-pastel-green {
+  background-color: var(--pastel-green-bg) !important;
+}
+
+.text-pastel-green-dark {
+  color: var(--pastel-green-text) !important;
+}
+
+.border-pastel {
+  border-color: var(--pastel-border) !important;
+}
+
+/* Tables in pastel */
+.table-pastel,
+.table thead.table-pastel th {
+  background-color: #e3edf2 !important;
+  color: #244652 !important;
+  border-bottom: 2px solid var(--pastel-border) !important;
+  font-weight: 600;
+  font-size: 0.83rem;
+  letter-spacing: 0.4px;
+}
+
+.table thead th {
+  background-color: var(--pastel-light);
+  color: var(--pastel-dark);
+  font-weight: 600;
+  border-bottom: 2px solid var(--pastel-border);
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(234, 242, 245, 0.6) !important;
+}
+
+/* Badges */
+.badge {
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.badge.bg-primary {
+  background-color: var(--pastel-primary) !important;
+}
+
+.badge.bg-info {
+  background-color: var(--pastel-blue-bg) !important;
+  color: var(--pastel-blue-text) !important;
+}
+
+.badge.bg-success {
+  background-color: var(--pastel-green-bg) !important;
+  color: var(--pastel-green-text) !important;
+}
+
+/* Pagination */
+.page-item.active .page-link {
+  background-color: var(--pastel-primary) !important;
+  border-color: var(--pastel-primary) !important;
+}
+
+.page-link {
+  color: var(--pastel-primary);
+}
+
+.page-link:hover {
+  color: var(--pastel-primary-hover);
+  background-color: var(--pastel-light);
+}
+
+/* Hero Section */
+.hero-pastel {
+  background: linear-gradient(135deg, #417b8c 0%, #5997a8 50%, #7db3c2 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Footer in soft muted slate */
+.footer-pastel {
+  background-color: #233943 !important;
+  border-top: 1px solid #365360 !important;
+}
